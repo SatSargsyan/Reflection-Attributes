@@ -1,7 +1,7 @@
 # Reflection-Attributes
 
-Attributes provide a powerful method of associating declarative information with C# code (types, methods, properties, and so forth). Once associated with a program entity, the attribute can be queried at run time and used in any number of ways.
-Example usage of attributes includes:
+###Attributes provide a powerful method of associating declarative information with C# code (types, methods, properties, and so forth). Once associated with a program entity, the attribute can be queried at run time and used in any number of ways.
+####Example usage of attributes includes:
 Associating help documentation with program entities (through a Help attribute).
 Associating value editors to a specific type in a GUI framework (through a ValueEditor attribute).
 In addition to a complete example, this tutorial includes the following topics:
