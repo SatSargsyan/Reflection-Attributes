@@ -66,12 +66,15 @@ public class HelpAttribute : System.Attribute
 </ul>
 ####Parameters for the AttributeUsage Attribute
 The attribute <b>AttributeUsage</b> provides the underlying mechanism by which attributes are declared.
-AttributeUsage has one positional parameter:
+<b>AttributeUsage</b> has one positional parameter:
 <ul>
-<li><b>AllowOn,</b> which specifies the program elements that the attribute can be assigned to (class, method, property, parameter, and so on). Valid values for this parameter can be found in the System.Attributes.AttributeTargets enumeration in the .NET Framework. The default value for this parameter is all program elements (AttributeElements.All).
-AttributeUsage has one named parameter:
-AllowMultiple, a Boolean value that indicates whether multiple attributes can be specified for one program element. The default value for this parameter is False.
-Using an Attribute Class
+<li><b>AllowOn,</b> which specifies the program elements that the attribute can be assigned to (class, method, property, parameter, and so on). Valid values for this parameter can be found in the<b> System.Attributes.AttributeTargets</b> enumeration in the .NET Framework. The default value for this parameter is all program elements <b>(AttributeElements.All).</b>
+</ul>
+<b>AttributeUsage</b> has one named parameter:
+<ul>
+<li>AllowMultiple, a Boolean value that indicates whether multiple attributes can be specified for one program element. The default value for this parameter is False.
+</ul>
+###Using an Attribute Class
 Here's a simple example of using the attribute declared in the previous section:
 [HelpAttribute("http://localhost/MyClassInfo")]
 class MyClass 
