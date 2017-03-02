@@ -76,18 +76,23 @@ The attribute <b>AttributeUsage</b> provides the underlying mechanism by which a
 </ul>
 ###Using an Attribute Class
 Here's a simple example of using the attribute declared in the previous section:
+```C#
 [HelpAttribute("http://localhost/MyClassInfo")]
 class MyClass 
 {
 }
+```
 In this example, the HelpAttribute attribute is associated with MyClass.
-Note   By convention, all attribute names end with the word "Attribute" to distinguish them from other items in the .NET Framework. However, you do not need to specify the attribute suffix when using attributes in code. For example, you can specify HelpAttribute as follows:
+####<b>Note</b>   By convention, all attribute names end with the word "Attribute" to distinguish them from other items in the .NET Framework. However, you do not need to specify the attribute suffix when using attributes in code. For example, you can specify HelpAttribute as follows:
+```C#
 [Help("http://localhost/MyClassInfo")] // [Help] == [HelpAttribute]
 class MyClass
 {
 }
-Accessing Attributes Through Reflection
-Once attributes have been associated with program elements, reflection can be used to query their existence and values. The main reflection methods to query attributes are contained in the System.Reflection.MemberInfo class (GetCustomAttributes family of methods). The following example demonstrates the basic way of using reflection to get access to attributes:
+```
+###Accessing Attributes Through Reflection
+Once attributes have been associated with program elements,<a href=https://msdn.microsoft.com/ru-ru/library/mt656691.aspx> reflection</a> can be used to query their existence and values. The main reflection methods to query attributes are contained in the <b>System.Reflection.MemberInfo</b> class (GetCustomAttributes family of methods). The following example demonstrates the basic way of using reflection to get access to attributes:
+```C#
 class MainClass 
 {
    public static void Main() 
@@ -100,5 +105,6 @@ class MainClass
       }
    } 
 } 
+```
 Example
 The following is a complete example where all pieces are brought together.
