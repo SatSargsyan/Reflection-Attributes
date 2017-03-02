@@ -55,16 +55,20 @@ public class HelpAttribute : System.Attribute
 <li>Named parameters are optional. If they are specified when the attribute is used, the name of the parameter must be used. Named parameters are defined by having a nonstatic field or property. In the example above, Topic is a named parameter.
 </ul>
 <li>Attribute parameters are restricted to constant values of the following types:
-Simple types (bool, byte, char, short, int, long, float, and double)
-string
-System.Type
-enums
-object (The argument to an attribute parameter of type object must be a constant value of one of the above types.)
-One-dimensional arrays of any of the above types
-Parameters for the AttributeUsage Attribute
-The attribute AttributeUsage provides the underlying mechanism by which attributes are declared.
+<ul>
+<li>Simple types (bool, byte, char, short, int, long, float, and double)
+<li>string
+<li>System.Type
+<li>enums
+<li>object (The argument to an attribute parameter of type object must be a constant value of one of the above types.)
+<li>One-dimensional arrays of any of the above types
+</ul>
+</ul>
+####Parameters for the AttributeUsage Attribute
+The attribute <b>AttributeUsage</b> provides the underlying mechanism by which attributes are declared.
 AttributeUsage has one positional parameter:
-AllowOn, which specifies the program elements that the attribute can be assigned to (class, method, property, parameter, and so on). Valid values for this parameter can be found in the System.Attributes.AttributeTargets enumeration in the .NET Framework. The default value for this parameter is all program elements (AttributeElements.All).
+<ul>
+<li><b>AllowOn,</b> which specifies the program elements that the attribute can be assigned to (class, method, property, parameter, and so on). Valid values for this parameter can be found in the System.Attributes.AttributeTargets enumeration in the .NET Framework. The default value for this parameter is all program elements (AttributeElements.All).
 AttributeUsage has one named parameter:
 AllowMultiple, a Boolean value that indicates whether multiple attributes can be specified for one program element. The default value for this parameter is False.
 Using an Attribute Class
