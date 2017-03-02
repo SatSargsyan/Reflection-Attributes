@@ -45,14 +45,16 @@ public class HelpAttribute : System.Attribute
    private string topic;
 }
 ```
-Code Discussion
-####The attribute AttributeUsage specifies the language elements to which the attribute can be applied.
-Attributes classes are public classes derived from System.Attribute that have at least one public constructor.
-Attribute classes have two types of parameters:
+####Code Discussion
+<ul>
+<li>The attribute AttributeUsage specifies the language elements to which the attribute can be applied.
+<li>Attributes classes are public classes derived from System.Attribute that have at least one public constructor.
+<li>Attribute classes have two types of parameters:
 <ul>
 <li>Positional parameters must be specified every time the attribute is used. Positional parameters are specified as constructor arguments to the attribute class. In the example above, url is a positional parameter.
 <li>Named parameters are optional. If they are specified when the attribute is used, the name of the parameter must be used. Named parameters are defined by having a nonstatic field or property. In the example above, Topic is a named parameter.
-Attribute parameters are restricted to constant values of the following types:
+</ul>
+<li>Attribute parameters are restricted to constant values of the following types:
 Simple types (bool, byte, char, short, int, long, float, and double)
 string
 System.Type
