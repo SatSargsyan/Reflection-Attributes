@@ -6,14 +6,16 @@
 <li>Associating help documentation with program entities (through a Help attribute).
 <li>Associating value editors to a specific type in a GUI framework (through a ValueEditor attribute).
 </ul>
-In addition to a complete example, this tutorial includes the following topics:
-Declaring an Attribute Class
+####In addition to a complete example, this tutorial includes the following topics:
+<ul>
+<li>Declaring an Attribute Class
 The first thing you need to be able to do is declare an attribute.
-Using an Attribute Class
+<li>Using an Attribute Class
 Once the attribute has been created, you then associate the attribute with a particular program element.
-Accessing Attributes Through Reflection
+<li>Accessing Attributes Through Reflection
 Once the attribute has been associated with a program element, you use reflection to query its existence and its value.
-Declaring an Attribute Class
+</ul>
+####Declaring an Attribute Class
 Declaring an attribute in C# is simple — it takes the form of a class declaration that inherits from System.Attribute and has been marked with the AttributeUsage attribute as shown below:
 ```C#
 using System;
