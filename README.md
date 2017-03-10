@@ -271,3 +271,6 @@ class MainClass
 ####Output
 
 
+###Creating Custom Attributes
+
+To design your <a href=https://msdn.microsoft.com/en-us/library/84c42s56(v=vs.110).aspx>own custom attributes</a>, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from System.Attribute. Just like traditional classes, custom attributes contain methods that store and retrieve data.
