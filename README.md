@@ -1,6 +1,6 @@
 # Reflection-Attributes
 
-####<a href=>The Attribute class associates predefined system information or user-defined custom information with a target element. A target element can be an assembly, class, constructor, delegate, enum, event, field, interface, method, portable executable file module, parameter, property, return value, struct, or another attribute.
+####<a href=https://msdn.microsoft.com/en-us/library/system.attribute(v=vs.110).aspx>The Attribute class</a> associates predefined system information or user-defined custom information with a target element. A target element can be an assembly, class, constructor, delegate, enum, event, field, interface, method, portable executable file module, parameter, property, return value, struct, or another attribute.
 
 ###<a href=https://msdn.microsoft.com/ru-ru/library/aa288454(v=vs.71).aspx>Attributes </a>provide a powerful method of associating declarative information with C# code (types, methods, properties, and so forth). Once associated with a program entity, the attribute can be queried at run time and used in any number of ways.
 ####Example usage of attributes includes:
