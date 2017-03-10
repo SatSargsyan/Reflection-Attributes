@@ -1,5 +1,7 @@
 # Reflection-Attributes
 
+####<a href=>The Attribute class associates predefined system information or user-defined custom information with a target element. A target element can be an assembly, class, constructor, delegate, enum, event, field, interface, method, portable executable file module, parameter, property, return value, struct, or another attribute.
+
 ###<a href=https://msdn.microsoft.com/ru-ru/library/aa288454(v=vs.71).aspx>Attributes </a>provide a powerful method of associating declarative information with C# code (types, methods, properties, and so forth). Once associated with a program entity, the attribute can be queried at run time and used in any number of ways.
 ####Example usage of attributes includes:
 <ul>
@@ -271,7 +273,47 @@ class MainClass
 ####Output
 
 
+####The <a href=https://www.tutorialspoint.com/csharp/csharp_attributes.htm>following example</a> demonstrates the attribute:
+```C#
+#define DEBUG
+using System;
+using System.Diagnostics;
+
+public class Myclass
+{
+   [Conditional("DEBUG")]
+   public static void Message(string msg)
+   {
+      Console.WriteLine(msg);
+   }
+}
+
+class Test
+{
+   static void function1()
+   {
+      Myclass.Message("In Function 1.");
+      function2();
+   }
+   static void function2()
+   {
+      Myclass.Message("In Function 2.");
+   }
+   
+   public static void Main()
+   {
+      Myclass.Message("In Main function.");
+      function1();
+      Console.ReadKey();
+   }
+}
+```
+
+
 ###Creating Custom Attributes
 
 To design your <a href=https://msdn.microsoft.com/en-us/library/84c42s56(v=vs.110).aspx>own custom attributes</a>, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from System.Attribute. Just like traditional classes, custom attributes contain methods that store and retrieve data.
-<a href=https://www.tutorialspoint.com/csharp/csharp_attributes.htm>See also</a>
+
+
+
+
